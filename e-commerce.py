@@ -10,4 +10,6 @@ idx4 = data.index(',',idx3)-1
 idx5 = data.index(':',idx4)+1
 quantity = int(data[idx5:-1])
 
-print(quantity)
+string = '[' + data[idx1:idx2] + ',' + data[idx3:idx4] +','+ str(quantity) + ']'
+
+print(string)
