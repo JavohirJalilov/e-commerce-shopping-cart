@@ -12,4 +12,5 @@ quantity = int(data[idx5:-1])
 
 string = '[' + data[idx1:idx2] + ',' + data[idx3:idx4] +','+ str(quantity) + ']'
 
-print(string)
+f = open('data.txt','w')
+f.write(string)
