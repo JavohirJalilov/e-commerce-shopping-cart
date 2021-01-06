@@ -4,4 +4,7 @@ data = f.read()
 idx1 = data.index(':')+2
 idx2 = data.index(',')-1
 
-print(data[idx1:idx2])
+idx3 = data.index('$',idx2)+1
+idx4 = data.index(',',idx3)-1
+
+print(data[idx3:idx4])
